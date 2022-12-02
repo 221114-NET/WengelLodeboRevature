@@ -12,15 +12,21 @@ namespace API.Project1.Controllers
     [ApiController]
     [Route("api/[controller]")]
     public class Employees : ControllerBase
-    {
-        private BusinessLayerEmp _busLayer = new BusinessLayerEmp();
+    {   
+        private readonly IBusinessLayerClass _ibus;
+         public Employees(IBusinessLayerClass ibus)
+        {
+            _ibus = ibus;
+        }
         [HttpPost]
         public Employee PostEmployee(Employee e)
         {
             e.Type = "MANAGER";
-            Employee emp =_busLayer.PostEmployee(e);
+            Employee emp =_ibus.PostEmployee(e);
+            Console.WriteLine(emp);
             //Employee emp = BusinessLayer.PostEmployee(e);
             return emp;
+
 
         }
     }

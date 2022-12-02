@@ -10,6 +10,11 @@ public class Employee
     public string Type { get; set; }
    // public  int ID { get; set;}
 
+   public Employee()
+   {
+
+   }
+
 
     public Employee (string name, string email, string password, string type){
         Name = name;

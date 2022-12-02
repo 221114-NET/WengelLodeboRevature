@@ -1,5 +1,7 @@
 
 namespace API.Project1;
+using BusinessLayer;  
+using RepoLayer;
 
 public class Program
 {
@@ -13,6 +15,11 @@ public class Program
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+
+        builder.Services.AddScoped<IRepositoryClass, RepositoryClass>();
+        builder.Services.AddScoped<IBusinessLayerClass, BusinessLayerClass>();
+        builder.Services.AddSingleton<IMyLogger, MyLogger>();
+       
 
         var app = builder.Build();
 
