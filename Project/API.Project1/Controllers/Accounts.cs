@@ -10,14 +10,14 @@ namespace API.Project1.Controllers
     [Route("api/[controller]")]
     public class Accounts : ControllerBase
     {
-        public void LogIn(Login login)
-        {
+        // public void LogIn(Login login)
+        // {
 
-        }
-        [HttpPost]
-        public void Register(Register register)
-        {
+        // }
+        // [HttpPost]
+        // public void Register(Register register)
+        // {
             
-        }
+        // }
     }
 }
