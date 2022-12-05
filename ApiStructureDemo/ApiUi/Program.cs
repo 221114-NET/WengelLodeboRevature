@@ -1,5 +1,4 @@
-
-namespace API.Project1;
+namespace ApiUi;
 using RepoLayer;
 using BusinessLayer;
 
@@ -23,10 +22,11 @@ public class Program
         //Transient services are created every time they are requested from the service container. 
         //Scoped services are created once per HTTP request.
         //Singleton services are created when the program starts. Every subsequesnt call to it uses the same object.
-       builder.Services.AddScoped<IRepositoryClass, RepositoryClass>();
+        builder.Services.AddScoped<IRepositoryClass, RepositoryClass>();
         builder.Services.AddScoped<IBusinessLayerClass, BusinessLayerClass>();
         builder.Services.AddSingleton<IMyLogger, MyLogger>();
        
+        
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.

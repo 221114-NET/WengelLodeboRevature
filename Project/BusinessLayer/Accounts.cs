@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace proj1
+namespace BusinessLayer
 {
-    public class ReimbursmentRequest
+    public class IAccounts
     {
         
     }
