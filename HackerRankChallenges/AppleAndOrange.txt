@@ -1,0 +1,19 @@
+ public static void countApplesAndOranges(int houseInitial,int houseEnds, int     orangeTLocation, int appleTLocation)
+     {
+         List<int>apples = new List<>();
+         List<int>oranges = new List<>();
+         
+         int totalApples = 0;
+         foreach(apple: apples){
+             if((appleTLocation+ apple))>= houseInitial && (appleTLocation+ apple <=houseEnds)
+             {
+                 totalApples++;
+             }
+         }
+         int totalOranges =0;
+         foreach(orange: oranges){
+             if(orangeTLocation + oranges >= houseInitial) && (orangeTLocation + oranges <= houseEnds){
+                 totalOranges++;
+             }
+         }
+     }
