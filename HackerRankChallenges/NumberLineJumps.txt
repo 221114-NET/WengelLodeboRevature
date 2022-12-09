@@ -1,0 +1,11 @@
+public static string kangaroo(int kangaroo1Jump, int kangaroo1Speed, int kangaroo2Jump, int kangaroo2Speed)
+    {
+        if((kangaroo1Speed > kangaroo2Speed) && ((kangaroo1Jump - kangaroo2Jump) % (kangaroo1Speed - kangaroo2Speed)) == 0)
+        {
+            return "YES";
+        }else {
+        
+            return "No";
+        }
+    }
+    
