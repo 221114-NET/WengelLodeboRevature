@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace ModelsLayer
 {
-    public class ReimbursmentRequest
+    public class ReimbursementRequest
     {
-        public int ID { get; set; }
+         public int ID { get; set; }
         public string EmailAddress { get; set; }
         public string RequestType { get; set; }
         public decimal Amount { get; set; }
@@ -15,11 +15,11 @@ namespace ModelsLayer
         public bool RequestStatus { get; set; }
 
 
-        public ReimbursmentRequest()
+        public ReimbursementRequest()
         {
             
         }
-        public ReimbursmentRequest(int id, string email, string requestType, decimal amount, bool isApproved, bool requestStatus)
+        public ReimbursementRequest(int id, string email, string requestType, decimal amount, bool isApproved, bool requestStatus)
         {
             ID = id;
             EmailAddress = email;

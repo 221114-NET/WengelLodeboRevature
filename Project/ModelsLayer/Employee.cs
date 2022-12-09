@@ -22,9 +22,7 @@ public class Employee
         Password = password;
         Type = type;
     }
-    public override string ToString() {
-        return $"Email Address: {EmailAddress}\nPassword: {Password}";
-    }
+   
 
     
 }

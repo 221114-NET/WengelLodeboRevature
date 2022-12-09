@@ -25,9 +25,11 @@ namespace BusinessLayer
         public Employee PostEmployee(Employee e)
         {
             // e.Name = "John";
-            // Employee emp = _repo.PostEmployee(e);
+             Employee emp = _repo.PostEmployee(e);
             // Console.WriteLine("josh");
-            // return emp;
+             return emp;
         }
+
+
     }
 }

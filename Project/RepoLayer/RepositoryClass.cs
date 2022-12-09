@@ -39,7 +39,7 @@ namespace RepoLayer
                 _logger.LogStuff(e);
                 return e;
 
-                
+
 
             }
             else
@@ -55,4 +55,14 @@ namespace RepoLayer
             }
         }
     }
+    // string connectionString = "Server=tcp:revature-wengel-project1.database.windows.net,1433;Initial Catalog=RevatureDB;Persist Security Info=False;User ID=weng;Password={Wentes93a!};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+    // SqlConnection con = new SqlConnection(connectionString); //give the connectionstring
+    // string query = $"insert into ReimbursementRequest(EmailAddress, RequestType,Amount,IsApproved, RequestStatus) values({emailAddress}, {requestType} , 5766.78, 0 , 0)";
+
+    //open the connection
+    // con.Open();
+    //         //make command
+    //         SqlCommand cmd = new SqlCommand(query, con);
+    // //Execute the command
+    // cmd.
 }
