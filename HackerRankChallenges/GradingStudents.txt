@@ -1,0 +1,28 @@
+public static List<int> gradingStudents(List<int> grades)
+    {
+        
+         //create an int variable that holds multiple of five.initialize variables.
+        
+        List <int> updatedGrades = new List <int> ();
+        int roundedGrade = (int)Math.Round(grade/5);
+        
+        //take each grade and find the next multiple of 5.
+        //when we divide grade by five and has remainder, and the remainder is less than three and then we will rounf grade up to the next multiple of 5. Otherwise, return the grade.
+        
+        foreach(int grade in grades)
+        {  
+        
+            if(roundedGrade < grade)
+            {
+                updatedGrades.Add(roundedGrade);;
+            }else if(roundedGrade - grade <3)
+            {
+                updatedGrades.Add(grade);
+            }else
+            {
+                updatedGrades.Add(roundedGrade);
+            }
+        
+        return updatedGrades;
+           
+        }
