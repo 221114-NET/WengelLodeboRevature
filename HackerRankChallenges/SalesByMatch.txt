@@ -1,0 +1,22 @@
+ public static int sockMerchant(int n, List<int> ar)
+    {
+        int pairSocks = 0;
+        int max = ar.Max()+1;
+        for(int i=0;i<n;i++)
+        {
+            if(ar[i]==max)
+                continue;
+            for(int j=i+1;j<n;j++)
+            {
+                if(ar[i]==ar[j])
+                {
+                    ar[i]=max;
+                    ar[j]=max;
+                   pair++;
+                   break; 
+                }
+            }
+        }
+        return pairSocks;
+    }
+    }
