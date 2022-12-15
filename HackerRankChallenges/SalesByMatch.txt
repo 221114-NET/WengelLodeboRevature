@@ -12,7 +12,7 @@
                 {
                     ar[i]=max;
                     ar[j]=max;
-                   pair++;
+                   pairSocks++;
                    break; 
                 }
             }
