@@ -1,0 +1,18 @@
+static string catAndMouse(int cat1, int cat2, int mouse) {
+
+        int distanceCat1 = Math.Abs(cat1-mouse);
+        int distanceCat2 = Math.Abs(cat2 - mouse);
+        
+        if(distanceCat1< distanceCat2)
+        {
+            return "Cat A";
+        }
+        else if(distanceCat2< distanceCat1)
+        {
+            return "Cat B";
+        }
+        else 
+        {
+            return "Mouse C";
+        }
+    }
