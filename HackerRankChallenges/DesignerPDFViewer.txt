@@ -1,0 +1,24 @@
+ public static int designerPdfViewer(List<int> h, string word1)
+    {
+         var alphabetHeight = new Dictionary<char, int>();
+             var alphabet = 'a';
+            foreach (var height in h)
+            {
+                alphabetHeight.Add(alphabet++, height);
+            }
+
+            var maxAlphabetHeight = 0;
+            string word = word1;
+            foreach (var letter in word)
+            {
+                if (alphabetHeight[letter] > maxAlphabetHeight)
+                {
+                    maxAlphabetHeight = alphabetHeight[letter];
+                }
+            }
+
+            var areaOfSelectedText = maxAlphabetHeight * word.Length;
+           return areaOfSelectedText;
+    
+}
+}
